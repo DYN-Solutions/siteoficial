@@ -113,6 +113,11 @@
             50% { transform: scale(1.05) rotate(0.5deg); opacity: 0.7; }
         }
 
+        @keyframes exclusiveGlow {
+            0%, 100% { left: -100%; }
+            50% { left: 100%; }
+        }
+
         /* Progress Indicator */
         .prestige-progress {
             position: fixed;
@@ -2155,6 +2160,20 @@
     <section class="heritage">
         <div class="heritage-frame">
             <div class="heritage-content manifest-left">
+                <!-- Qualification Section - Moved from home page -->
+                <div class="qualification-section" style="margin-bottom: 2.5rem; padding: 1.5rem 2rem; background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%); border: 1px solid rgba(201, 169, 110, 0.4); border-radius: 12px; backdrop-filter: blur(30px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.08), transparent); animation: exclusiveGlow 4s ease-in-out infinite;"></div>
+                    <div style="display: flex; align-items: center; gap: 16px; position: relative; z-index: 1;">
+                        <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: var(--gold-accent); font-size: 1.1rem;">
+                            <i class="fas fa-shield-alt" style="filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));"></i>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <span style="font-size: 0.85rem; font-weight: 400; color: rgba(255, 255, 255, 0.7); text-transform: uppercase; letter-spacing: 1.2px;">Acesso Exclusivo para Organizações</span>
+                            <span style="font-size: 1rem; font-weight: 600; color: var(--gold-accent); letter-spacing: 0.8px;">Faturamento mínimo: R$2M anuais</span>
+                        </div>
+                    </div>
+                </div>
+                
                 <a href="https://dynamicsolutions.digital" class="brand-logo">
                     <img src="../image/Logo oficial (1).png" 
                          alt="Dynamic Solutions" 

@@ -466,9 +466,11 @@
         /* Mobile optimization for competitive seed */
         @media (max-width: 768px) {
             .competitive-seed {
-                margin-top: 20px;
-                padding: 18px 22px;
-                border-radius: 6px;
+                margin-top: 25px; /* Aumentado para dar mais espaço entre elementos */
+                padding: 20px 24px; /* Padding ligeiramente maior */
+                border-radius: 8px;
+                z-index: 10; /* Garante que fica acima de outros elementos */
+                position: relative;
             }
             
             .seed-text {
@@ -534,30 +536,19 @@
             letter-spacing: 0.5px;
         }
 
-        /* Mobile qualification hint */
+        /* Mobile qualification hint - OCULTAR NO MOBILE */
         @media (max-width: 768px) {
             .qualification-hint {
-                top: 20px;
-                right: 20px;
-                transform: scale(0.85); /* Reduz tamanho no mobile */
+                display: none; /* Oculta completamente no mobile */
             }
             
-            /* Add to mobile CTA backup instead */
+            /* Remove mobile CTA backup já que não precisamos mais */
             .mobile-cta-backup {
-                padding-top: 35px;
+                padding-top: 0;
             }
             
             .mobile-cta-backup::before {
-                content: 'Exclusivo: Faturamento mínimo R$2M anuais';
-                position: absolute;
-                top: 12px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 0.75rem;
-                color: rgba(201, 169, 110, 0.8);
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                font-weight: 500;
+                display: none;
             }
         }
 
@@ -577,7 +568,7 @@
         /* ===== RESPONSIVIDADE ULTRA-PREMIUM ===== */
         @media (max-width: 768px) {
             .content {
-                transform: translateY(-7vh);
+                transform: translateY(-4vh); /* Reduzido de -7vh para -4vh para dar mais espaço */
             }
             
             .neural-cta-container {
