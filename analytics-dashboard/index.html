@@ -2610,6 +2610,13 @@
             setupCounterAnimation() {
                 const counters = document.querySelectorAll('[data-target]');
                 
+                // Reset all counters to 0 to prevent cache issues
+                console.log(`🔄 Setup: Resetando ${counters.length} contadores novamente...`);
+                counters.forEach(counter => {
+                    counter.textContent = '0';
+                    counter.classList.remove('animated');
+                });
+                
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
@@ -2903,6 +2910,14 @@
 
         // Loading sequence
         document.addEventListener('DOMContentLoaded', () => {
+            // Reset all counters immediately to prevent showing cached values
+            const counters = document.querySelectorAll('[data-target]');
+            console.log(`🔄 Resetando ${counters.length} contadores para prevenir cache...`);
+            counters.forEach(counter => {
+                counter.textContent = '0';
+                counter.classList.remove('animated');
+            });
+            
             const loader = new LoadingController();
             
             const loadingSteps = [
