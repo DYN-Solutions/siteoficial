@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Services Showcase</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Prefetch navegação -->
+    <link rel="prefetch" href="../assessment/index.html">
+    <link rel="prefetch" href="../about/index.html">
+    <link rel="prefetch" href="../analytics-dashboard/index.html">
+    <link rel="prefetch" href="../home/index.html">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="neural-bg"></div>
+    
+    <div class="elegant-particles" id="elegant-particles"></div>
+    <div class="neural-particles" id="neural-particles"></div>
+
+    <div class="showcase-container">
+        <div class="showcase-header">
+            <div class="title-container">
+                <div class="title-ornament">
+                    <div class="ornament-circle"></div>
+                    <div class="ornament-circle"></div>
+                    <div class="ornament-circle"></div>
+                    <div class="title-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <h1 class="neural-title">
+                    <span class="title-line">Excelência</span>
+                    <span class="title-line">Absoluta</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" onclick="openModal('agentes')">
+                <div class="holographic-sweep"></div>
+                <div class="card-header">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            <path d="M13 8H7"/>
+                            <path d="M17 12H7"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Sistemas de Decisão Proprietários</h3>
+                </div>
+                <div class="card-content">
+                    <p class="service-description">Operacionalizamos consciências digitais exclusivas que processam, decidem e executam 24/7. Não adaptamos ferramentas - criamos inteligências sob medida que antecipam oportunidades 6 meses antes da concorrência perceber.</p>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openModal('desenvolvimento')">
+                <div class="holographic-sweep"></div>
+                <div class="card-header">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Ecossistemas Comportamentais Funcionais</h3>
+                </div>
+                <div class="card-content">
+                    <p class="service-description">Não construímos sites - operacionalizamos ecossistemas que influenciam comportamento e se otimizam autonomamente. Propriedade intelectual que nenhum concorrente pode replicar. Taxa de conversão média: 127% superior ao benchmark do setor.</p>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openModal('apps')">
+                <div class="holographic-sweep"></div>
+                <div class="card-header">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="2" y1="9" x2="22" y2="9"/>
+                            <line x1="2" y1="15" x2="22" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Interfaces de Comando Exclusivas</h3>
+                </div>
+                <div class="card-content">
+                    <p class="service-description">Operacionalizamos interfaces que se tornam extensões do pensamento executivo. Cada interação é otimizada para acelerar decisões estratégicas. Apps que evoluem com a organização, criando vantagem competitiva através da usabilidade proprietária.</p>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openModal('infraestrutura')">
+                <div class="holographic-sweep"></div>
+                <div class="card-header">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 01-8 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Fundações de Escala Ilimitada</h3>
+                </div>
+                <div class="card-content">
+                    <p class="service-description">Não implementamos servidores - concretizamos fundações que suportam crescimento exponencial com elegância operacional constante. Escale 1000% mantendo a mesma performance. 99.99% uptime garantido com arquitetura auto-regenerativa.</p>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openModal('estrategias')">
+                <div class="holographic-sweep"></div>
+                <div class="card-header">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Mapas de Territórios Inexplorados</h3>
+                </div>
+                <div class="card-content">
+                    <p class="service-description">Operacionalizamos análises comportamentais que revelam padrões psicológicos invisíveis. Criamos mapas para territórios de crescimento que consultores convencionais nem sabem que existem. Média de descoberta: R$4,7M em oportunidades ocultas por análise.</p>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="openModal('automacao')">
+                <div class="holographic-sweep"></div>
+                <div class="card-header">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                            <path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Libertação Intelectual Completa</h3>
+                </div>
+                <div class="card-content">
+                    <p class="service-description">Operacionalizamos sistemas que não apenas executam, mas evoluem e se refinam autonomamente. Tempo transformado em oportunidades estratégicas para genialidade executiva. Eficiência operacional média: +437% em 90 dias com eliminação de tarefas repetitivas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div id="modalBody">
+                <!-- Conteúdo será inserido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
