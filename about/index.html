@@ -118,6 +118,13 @@
             50% { left: 100%; }
         }
 
+        /* Qualification Section - Mobile Only */
+        @media (max-width: 768px) {
+            .qualification-section {
+                display: block !important;
+            }
+        }
+
         /* Progress Indicator */
         .prestige-progress {
             position: fixed;
@@ -2160,8 +2167,8 @@
     <section class="heritage">
         <div class="heritage-frame">
             <div class="heritage-content manifest-left">
-                <!-- Qualification Section - Moved from home page -->
-                <div class="qualification-section" style="margin-bottom: 2.5rem; padding: 1.5rem 2rem; background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%); border: 1px solid rgba(201, 169, 110, 0.4); border-radius: 12px; backdrop-filter: blur(30px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05); position: relative; overflow: hidden;">
+                <!-- Qualification Section - Mobile Only -->
+                <div class="qualification-section" style="display: none; margin-bottom: 2.5rem; padding: 1.5rem 2rem; background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%); border: 1px solid rgba(201, 169, 110, 0.4); border-radius: 12px; backdrop-filter: blur(30px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05); position: relative; overflow: hidden;">
                     <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.08), transparent); animation: exclusiveGlow 4s ease-in-out infinite;"></div>
                     <div style="display: flex; align-items: center; gap: 16px; position: relative; z-index: 1;">
                         <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: var(--gold-accent); font-size: 1.1rem;">
