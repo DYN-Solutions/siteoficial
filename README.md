@@ -1,6 +1,6 @@
 # Dynamic Solutions - Enterprise Website Architecture
 
-## 🏗️ Professional Project Structure
+## 🏗️ Project Structure
 
 ```
 siteoficial/
